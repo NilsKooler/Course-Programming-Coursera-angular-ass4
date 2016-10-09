@@ -1,0 +1,6 @@
+<h3>Our Food Categories</h3>
+<table class="table table-striped" style="background-color:#e59f06">
+  <tr ng-repeat="category in $ctrl.categories">
+    <td> {{category.name}} ( <a ui-sref="items({categoryId: category.short_name})"> {{category.short_name}} )</a></td>
+  <tr>
+</table>  
